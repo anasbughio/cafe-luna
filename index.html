@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luna Café & Kitchen | Fresh Food & Great Coffee</title>
+
+    <meta
+        name="description"
+        content="Luna Café & Kitchen — fresh food, handcrafted coffee and warm moments."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                Luna<span>.</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+
+                <a href="#menu" class="nav-btn">
+                    View Menu
+                </a>
+
+            </nav>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <span class="eyebrow">
+                    COFFEE • FOOD • COMMUNITY
+                </span>
+
+                <h1>
+                    Good food.
+                    <br>
+                    Great coffee.
+                    <br>
+                    <em>Good moments.</em>
+                </h1>
+
+                <p>
+                    A cozy neighborhood café serving fresh food,
+                    handcrafted coffee and memorable moments every day.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn btn-primary">
+                        Explore Our Menu
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Visit Us
+                    </a>
+
+                </div>
+
+                <div class="hero-info">
+
+                    <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Open Daily · 7AM – 10PM</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Downtown</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="intro">
+
+            <div class="container intro-grid">
+
+                <div class="intro-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85"
+                        alt="Fresh coffee at Luna Cafe"
+                    >
+                </div>
+
+                <div class="intro-content">
+
+                    <span class="section-label">
+                        WELCOME TO LUNA
+                    </span>
+
+                    <h2>
+                        Your neighborhood
+                        <span>happy place.</span>
+                    </h2>
+
+                    <p>
+                        At Luna, we believe great food doesn't need
+                        to be complicated. We combine fresh ingredients,
+                        carefully brewed coffee and a warm atmosphere
+                        to create a place you'll want to come back to.
+                    </p>
+
+                    <p>
+                        Whether you're grabbing your morning coffee,
+                        meeting friends for brunch or winding down
+                        after a long day, there's always a seat waiting
+                        for you.
+                    </p>
+
+                    <a href="#about" class="text-link">
+                        Our Story
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENU ================= -->
+
+        <section class="menu-section" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        OUR MENU
+                    </span>
+
+                    <h2>
+                        Made fresh.
+                        <span>Served with love.</span>
+                    </h2>
+
+                    <p>
+                        Simple ingredients, bold flavors and plenty
+                        of reasons to come back.
+                    </p>
+
+                </div>
+
+
+                <div class="menu-tabs">
+
+                    <button class="menu-tab active" data-category="coffee">
+                        Coffee
+                    </button>
+
+                    <button class="menu-tab" data-category="breakfast">
+                        Breakfast
+                    </button>
+
+                    <button class="menu-tab" data-category="lunch">
+                        Lunch
+                    </button>
+
+                    <button class="menu-tab" data-category="dessert">
+                        Desserts
+                    </button>
+
+                </div>
+
+
+                <div class="menu-grid">
+
+                    <article class="menu-card" data-category="coffee">
+
+                        <div class="menu-card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=85"
+                                alt="Cappuccino"
+                            >
+                        </div>
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-title">
+                                <h3>Classic Cappuccino</h3>
+                                <strong>$4.50</strong>
+                            </div>
+
+                            <p>
+                                Rich espresso, steamed milk and
+                                silky foam.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="coffee">
+
+                        <div class="menu-card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85"
+                                alt="Iced coffee"
+                            >
+                        </div>
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-title">
+                                <h3>Cold Brew</h3>
+                                <strong>$4.00</strong>
+                            </div>
+
+                            <p>
+                                Smooth, refreshing and slowly brewed
+                                for a rich flavor.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="breakfast">
+
+                        <div class="menu-card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=85"
+                                alt="Avocado toast"
+                            >
+                        </div>
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-title">
+                                <h3>Avocado Toast</h3>
+                                <strong>$9.50</strong>
+                            </div>
+
+                            <p>
+                                Sourdough toast, avocado, poached egg
+                                and chili flakes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="breakfast">
+
+                        <div class="menu-card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=85"
+                                alt="Breakfast plate"
+                            >
+                        </div>
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-title">
+                                <h3>Luna Breakfast</h3>
+                                <strong>$12.00</strong>
+                            </div>
+
+                            <p>
+                                Farm eggs, sourdough, roasted potatoes
+                                and seasonal greens.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="lunch">
+
+                        <div class="menu-card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85"
+                                alt="Fresh salad"
+                            >
+                        </div>
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-title">
+                                <h3>Garden Bowl</h3>
+                                <strong>$13.50</strong>
+                            </div>
+
+                            <p>
+                                Seasonal greens, grains, avocado,
+                                roasted vegetables and herbs.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="lunch">
+
+                        <div class="menu-card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=800&q=85"
+                                alt="Grilled sandwich"
+                            >
+                        </div>
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-title">
+                                <h3>Grilled Chicken Club</h3>
+                                <strong>$14.00</strong>
+                            </div>
+
+                            <p>
+                                Grilled chicken, tomato, lettuce,
+                                cheddar and house sauce.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="dessert">
+
+                        <div class="menu-card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=85"
+                                alt="Chocolate dessert"
+                            >
+                        </div>
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-title">
+                                <h3>Chocolate Cake</h3>
+                                <strong>$6.00</strong>
+                            </div>
+
+                            <p>
+                                Rich chocolate cake with smooth
+                                chocolate frosting.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="dessert">
+
+                        <div class="menu-card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=85"
+                                alt="Cheesecake"
+                            >
+                        </div>
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-title">
+                                <h3>Berry Cheesecake</h3>
+                                <strong>$6.50</strong>
+                            </div>
+
+                            <p>
+                                Creamy cheesecake topped with
+                                seasonal berries.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="menu-bottom">
+
+                    <a href="#" class="btn btn-dark">
+                        Download Full Menu
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        OUR STORY
+                    </span>
+
+                    <h2>
+                        More than coffee.
+                        <span>It's a feeling.</span>
+                    </h2>
+
+                    <p>
+                        Luna started with a simple idea: create a
+                        neighborhood space where people could slow down,
+                        connect and enjoy genuinely good food.
+                    </p>
+
+                    <p>
+                        Today, we're still guided by that same idea.
+                        Every cup is carefully brewed, every plate is
+                        made with fresh ingredients and every guest is
+                        welcomed like family.
+                    </p>
+
+                    <div class="about-features">
+
+                        <div>
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>Fresh Ingredients</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-mug-hot"></i>
+                            <span>Specialty Coffee</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Made With Care</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85"
+                        alt="Luna Cafe interior"
+                    >
+
+                    <div class="image-badge">
+                        <strong>2018</strong>
+                        <span>Serving since</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="gallery" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        A GLIMPSE OF LUNA
+                    </span>
+
+                    <h2>
+                        Come for the coffee.
+                        <span>Stay for the vibe.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item large">
+                        <img
+                            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85"
+                            alt="Cafe interior"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=85"
+                            alt="Coffee"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=85"
+                            alt="Restaurant interior"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=85"
+                            alt="Cafe seating"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=800&q=85"
+                            alt="Coffee shop"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta">
+
+            <div class="container cta-content">
+
+                <span class="section-label">
+                    YOUR TABLE IS WAITING
+                </span>
+
+                <h2>
+                    Make today a little
+                    <span>more delicious.</span>
+                </h2>
+
+                <p>
+                    Stop by for your favorite coffee, grab a bite
+                    and stay awhile.
+                </p>
+
+                <a href="#contact" class="btn btn-light">
+                    Plan Your Visit
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="container contact-grid">
+
+                <div class="contact-info">
+
+                    <span class="section-label">
+                        FIND US
+                    </span>
+
+                    <h2>
+                        We'd love to
+                        <span>see you.</span>
+                    </h2>
+
+                    <p>
+                        Come by, grab a coffee and make yourself
+                        comfortable.
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail">
+
+                            <div class="detail-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <strong>Address</strong>
+                                <span>
+                                    124 Market Street,
+                                    Downtown
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <div class="detail-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <strong>Phone</strong>
+                                <span>
+                                    (555) 123-4567
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <div class="detail-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <strong>Opening Hours</strong>
+                                <span>
+                                    Mon – Sun · 7AM – 10PM
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="map-box">
+
+                    <div class="map-content">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h3>
+                            Luna Café & Kitchen
+                        </h3>
+
+                        <p>
+                            124 Market Street · Downtown
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Get Directions
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-top">
+
+            <div>
+
+                <a href="#home" class="logo footer-logo">
+                    Luna<span>.</span>
+                </a>
+
+                <p>
+                    Fresh food, great coffee and
+                    good moments.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © 2026 Luna Café & Kitchen. All rights reserved.
+            </span>
+
+            <span>
+                Website concept by <strong>WebBloom</strong>
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
